@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_roadmap/User_Interface/widgets/assets.dart';
 import 'package:flutter_roadmap/User_Interface/widgets/stateful.dart';
 import 'package:flutter_roadmap/User_Interface/widgets/stateless.dart';
 
@@ -51,6 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       MaterialPageRoute(builder: (context) => Stateful()));
                 },
                 child: Text("Stateful")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Assets()));
+                },
+                child: Text("Assets")),
           ],
         ),
       ),
