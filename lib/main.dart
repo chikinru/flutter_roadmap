@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_roadmap/3rd%20library/cachedimage.dart';
 import 'package:flutter_roadmap/3rd%20library/dio.dart';
+
 import 'package:flutter_roadmap/3rd%20library/http.dart';
 import 'package:flutter_roadmap/User_Interface/widgets/assets.dart';
 import 'package:flutter_roadmap/User_Interface/widgets/stateful.dart';
@@ -72,6 +74,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       context, MaterialPageRoute(builder: (context) => DioX()));
                 },
                 child: Text("Dio")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => CachedImage()));
+                },
+                child: Text("CachedImage")),
           ],
         ),
       ),
